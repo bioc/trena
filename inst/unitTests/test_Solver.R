@@ -89,7 +89,6 @@ test_MatrixWarnings <- function()
 
     # Check that a matrix with a row of 0's produces an error for most solvers
     test.mtx[1,] <- 0
-    checkException(BayesSpikeSolver(test.mtx, target.gene, tfs), silent = TRUE)
     checkException(LassoPVSolver(test.mtx, target.gene, tfs), silent = TRUE)
     checkException(RandomForestSolver(test.mtx, target.gene, tfs), silent = TRUE)
     checkException(PearsonSolver(test.mtx, target.gene, tfs), silent = TRUE)
@@ -98,7 +97,6 @@ test_MatrixWarnings <- function()
 
     # Check that a target gene with low expression causes a warning for all solvers
     test.mtx[1,] <- 0.1
-    checkException(BayesSpikeSolver(test.mtx, target.gene, tfs), silent = TRUE)
     checkException(LassoPVSolver(test.mtx, target.gene, tfs), silent = TRUE)
     checkException(RandomForestSolver(test.mtx, target.gene, tfs), silent = TRUE)
     checkException(PearsonSolver(test.mtx, target.gene, tfs), silent = TRUE)

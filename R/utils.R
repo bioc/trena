@@ -96,7 +96,7 @@ parseDatabaseUri <- function(database.uri)
 
 getAvailableSolvers <- function() {
 
-    availableSolvers <- c("BayesSpike", "LassoPV", "Lasso", "Pearson",
+    availableSolvers <- c("LassoPV", "Lasso", "Pearson",
                           "RandomForest", "Ridge", "Spearman")
 
     return(availableSolvers)

@@ -17,7 +17,7 @@ Solver Class Objects
 \code{\link{Solver}} object also contains the name of the selected solver and
 dispatches the correct feature selection method when \code{run} is called on the
 object. It is inherited by all the following subclasses, representing the
-different feature selection methods: \code{\link{BayesSpikeSolver}},
+different feature selection methods:
 \code{\link{EnsembleSolver}}, \code{\link{LassoPVSolver}},
 \code{\link{LassoSolver}}, \code{\link{PearsonSolver}},
 \code{\link{RandomForestSolver}}, \code{\link{RidgeSolver}},
