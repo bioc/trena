@@ -15,8 +15,7 @@
                                       lambda.lasso = "numeric",
                                       lambda.ridge = "numeric",
                                       lambda.sqrt = "numeric",
-                                      nCores.sqrt = "numeric",
-                                      nOrderings.bayes = "numeric"
+                                      nCores.sqrt = "numeric")
                                       )
                             )
 #----------------------------------------------------------------------------------------------------
@@ -79,7 +78,6 @@ EnsembleSolver <- function(mtx.assay=matrix(), targetGene, candidateRegulators,
                            lambda.ridge = numeric(0),
                            lambda.sqrt = numeric(0),
                            nCores.sqrt = 4,
-                           nOrderings.bayes = 10,
                            quiet=TRUE)
 {
     if(any(grepl(targetGene, candidateRegulators)))
@@ -101,8 +99,7 @@ EnsembleSolver <- function(mtx.assay=matrix(), targetGene, candidateRegulators,
                            lambda.lasso = lambda.lasso,
                            lambda.ridge = lambda.ridge,
                            lambda.sqrt = lambda.sqrt,
-                           nCores.sqrt = nCores.sqrt,
-                           nOrderings.bayes = nOrderings.bayes)
+                           nCores.sqrt = nCores.sqrt)
     obj
 
 } # EnsembleSolver, the constructor
