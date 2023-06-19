@@ -17,7 +17,6 @@
                                       lambda.sqrt = "numeric",
                                       nCores.sqrt = "numeric")
                                       )
-                            )
 #----------------------------------------------------------------------------------------------------
 setGeneric("getSolverNames", signature = "obj", function(obj) standardGeneric("getSolverNames"))
 #----------------------------------------------------------------------------------------------------

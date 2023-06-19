@@ -17,7 +17,6 @@ EnsembleSolver(
   lambda.ridge = numeric(0),
   lambda.sqrt = numeric(0),
   nCores.sqrt = 4,
-  nOrderings.bayes = 10,
   quiet = TRUE
 )
 }
